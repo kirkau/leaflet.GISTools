@@ -24,73 +24,57 @@ function getGeneralDirection (b) {
     }
 }
 
-function getDirectionToDestination (b) {
-    if (b == 0 || b == 360)
-    {
-      return "W";
+function getDirectionToDestination(b) {
+    if (b == 0 || b == 360) {
+        return "W";
     }
-    if (b > 0 && b < 45)
-    {
-      return "NWW";
+    if (b > 0 && b < 45) {
+        return "NWW";
     }
-    if (b == 45)
-    {
-      return "NW";
+    if (b == 45) {
+        return "NW";
     }
-    if (b > 45 && b < 90)
-    {
-      return "NNW";
+    if (b > 45 && b < 90) {
+        return "NNW";
     }
 
-    if (b == 90)
-    {
-      return "N";
+    if (b == 90) {
+        return "N";
     }
-    if (b > 90 && b < 135)
-    {
-       return "NNE";
+    if (b > 90 && b < 135) {
+        return "NNE";
     }
-    if (b == 135)
-    {
-       return "NE";
+    if (b == 135) {
+        return "NE";
     }
-    if (b > 135 && b < 180)
-    {
-       return "NEE";
+    if (b > 135 && b < 180) {
+        return "NEE";
     }
-	
-    if (b == 180)
-    {
-       return "E";
+
+    if (b == 180) {
+        return "E";
     }
-    if (b > 180 && b < 225)
-    {
-       return "SEE";
+    if (b > 180 && b < 225) {
+        return "SEE";
     }
-    if (b == 225)
-    {
-       return "SE";
+    if (b == 225) {
+        return "SE";
     }
-    if (b > 225 && b < 270)
-    {
-       return "SSE";
+    if (b > 225 && b < 270) {
+        return "SSE";
     }
-	
-    if (b == 270)
-    {
-       return "S";
+
+    if (b == 270) {
+        return "S";
     }
-    if (b > 270 && b < 315)
-    {
-       return "SSW";
+    if (b > 270 && b < 315) {
+        return "SSW";
     }
-    if (b == 315)
-    {
-       return "SW";
+    if (b == 315) {
+        return "SW";
     }
-    if (b > 315 && b < 360)
-    {
-       return "SWW";
+    if (b > 315 && b < 360) {
+        return "SWW";
     }
 }
 
